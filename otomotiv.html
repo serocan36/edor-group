@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EDOR GROUP Otomotiv - Lüks araçlar ve premium otomotiv hizmetleri.">
+    <title>Otomotiv | EDOR GROUP</title>
+    <link rel="icon" href="assets/images/favicocn.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .page-header {
+            height: 60vh;
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.4) 0%, rgba(5, 5, 5, 1) 100%), url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2069&auto=format&fit=crop') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 4rem;
+        }
+
+        .car-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .car-item {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .car-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .car-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .car-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .car-item:hover .car-overlay {
+            background: linear-gradient(to top, rgba(212, 175, 55, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%);
+        }
+
+        .car-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .car-specs {
+            display: flex;
+            gap: 1.5rem;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease 0.1s;
+        }
+
+        .car-item:hover .car-specs {
+            opacity: 1;
+            transform: translateY(0);
+            color: var(--bg-dark);
+        }
+
+        .car-item:hover .car-title {
+            color: var(--bg-dark);
+        }
+
+        @media (max-width: 768px) {
+            .car-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo"
+                    class="site-logo"></a>
+
+            <nav class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="gayrimenkul.html">Gayrimenkul</a>
+                <a href="otomotiv.html" class="active">Otomotiv</a>
+                <a href="insaat.html">İnşaat</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <div class="hamburger"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container" data-aos="fade-up">
+            <span class="hero-subtitle">Prestijli Araçlar</span>
+            <h1 class="hero-title" style="font-size: 4rem; margin-bottom: 0;">Otomotiv Çözümleri</h1>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" style="margin-bottom: 4rem;">
+                <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Lüks segment araç filomuz ve kurumsal
+                    VIP hizmetlerimizle, yollarda da prestijinizi yansıtıyoruz. Kurumsal filo kiralama ve özel satış
+                    hizmetleri.</p>
+            </div>
+
+            <div class="car-gallery">
+                <!-- Car 1 -->
+                <div class="car-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop"
+                        alt="Lüks Sedan">
+                    <div class="car-overlay">
+                        <h3 class="car-title">Premium Sedan Koleksiyonu</h3>
+                        <div class="car-specs">
+                            <span><i class="fa-solid fa-gauge-high"></i> VIP Donanım</span>
+                            <span><i class="fa-solid fa-user-tie"></i> Şoförlü Hizmet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1932&auto=format&fit=crop"
+                        alt="Premium SUV">
+                    <div class="car-overlay">
+                        <h3 class="car-title">Executive SUV Filosu</h3>
+                        <div class="car-specs">
+                            <span><i class="fa-solid fa-shield-halved"></i> Zırhlı Seçenekler</span>
+                            <span><i class="fa-solid fa-road"></i> 4x4 Performans</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1932&auto=format&fit=crop"
+                        alt="Spor Araç">
+                    <div class="car-overlay">
+                        <h3 class="car-title">Performans Serisi</h3>
+                        <div class="car-specs">
+                            <span><i class="fa-solid fa-bolt"></i> Yüksek Performans</span>
+                            <span><i class="fa-solid fa-star"></i> Özel Seri</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop"
+                        alt="Elektrikli Araç">
+                    <div class="car-overlay">
+                        <h3 class="car-title">Yeni Nesil Elektrikli</h3>
+                        <div class="car-specs">
+                            <span><i class="fa-solid fa-plug"></i> %100 Elektrikli</span>
+                            <span><i class="fa-solid fa-leaf"></i> Çevreci Çözüm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 4rem;" data-aos="fade-up">
+                <a href="iletisim.html" class="btn btn-primary">Filo Teklifi Alın</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo"
+                            class="site-logo"></a>
+                    <p>Gayrimenkul, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan
+                        kurumsal yapı.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Hızlı Menü</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="gayrimenkul.html">Gayrimenkul</a></li>
+                        <li><a href="otomotiv.html">Otomotiv</a></li>
+                        <li><a href="insaat.html">İnşaat</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Kurumsal</h3>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
+                        <li><a href="misyonumuz.html">Misyonumuz</a></li>
+                        <li><a href="degerlerimiz.html">Değerlerimiz</a></li>
+                        <li><a href="insan-kaynaklari.html">İnsan Kaynakları</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Levent Mah. Büyükdere Cad. No: 123<br>Şişli / İstanbul</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+90 (212) 555 00 00</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@edorgroup.com.tr</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 EDOR GROUP. Tüm hakları saklıdır. Design & Code by <a href="https://serhatmazak.com/"
+                        target="_blank" class="footer-credit">Serhat MAZAK</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

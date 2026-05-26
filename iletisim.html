@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EDOR GROUP İletişim - Bizimle iletişime geçin.">
+    <title>İletişim | EDOR GROUP</title>
+    <link rel="icon" href="assets/images/favicocn.png" type="image/png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .page-header {
+            height: 50vh;
+            background: linear-gradient(to bottom, rgba(5,5,5,0.6) 0%, rgba(5,5,5,1) 100%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 4rem;
+        }
+        
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: -5rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .contact-info {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 4px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+        
+        .contact-form {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 4px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            background: rgba(212,175,55,0.1);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .contact-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-item p {
+            margin-bottom: 0;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            border-radius: 4px;
+            transition: var(--transition-smooth);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .map-container {
+            margin-top: 4rem;
+            height: 400px;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 991px) {
+            .contact-wrap {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+            
+            <nav class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="gayrimenkul.html">Gayrimenkul</a>
+                <a href="otomotiv.html">Otomotiv</a>
+                <a href="insaat.html">İnşaat</a>
+                <a href="iletisim.html" class="active">İletişim</a>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <div class="hamburger"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container" data-aos="fade-up">
+            <span class="hero-subtitle">Bize Ulaşın</span>
+            <h1 class="hero-title" style="font-size: 4rem; margin-bottom: 0;">İletişim</h1>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-wrap">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 style="font-size: 2rem; margin-bottom: 2rem;">İletişim Bilgileri</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h3>Merkez Ofis</h3>
+                            <p>Levent Mah. Büyükdere Cad. No: 123<br>Şişli / İstanbul</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+90 (212) 555 00 00<br>+90 (212) 555 00 01</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h3>E-Posta</h3>
+                            <p>info@edorgroup.com.tr<br>kariyer@edorgroup.com.tr</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-left">
+                    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Mesaj Gönderin</h2>
+                    <form id="contactForm" onsubmit="event.preventDefault(); alert('Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.');">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-Posta Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Telefon Numaranız">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required style="appearance: none;">
+                                <option value="" disabled selected>İlgilendiğiniz Sektör</option>
+                                <option value="gayrimenkul">Gayrimenkul</option>
+                                <option value="otomotiv">Otomotiv</option>
+                                <option value="insaat">İnşaat</option>
+                                <option value="diger">Diğer / Kurumsal</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Mesajınız" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Gönder</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.384594247291!2d29.006399115415714!3d41.07142497929424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab61389f4b52b%3A0xc00f2e0fb5d7c355!2sLevent%2C%20Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+            <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+                    <p>Gayrimenkul, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal yapı.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Hızlı Menü</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="gayrimenkul.html">Gayrimenkul</a></li>
+                        <li><a href="otomotiv.html">Otomotiv</a></li>
+                        <li><a href="insaat.html">İnşaat</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Kurumsal</h3>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
+                        <li><a href="misyonumuz.html">Misyonumuz</a></li>
+                        <li><a href="degerlerimiz.html">Değerlerimiz</a></li>
+                        <li><a href="insan-kaynaklari.html">İnsan Kaynakları</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Levent Mah. Büyükdere Cad. No: 123<br>Şişli / İstanbul</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+90 (212) 555 00 00</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@edorgroup.com.tr</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 EDOR GROUP. Tüm hakları saklıdır. Design & Code by <a href="https://serhatmazak.com/" target="_blank" class="footer-credit">Serhat MAZAK</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
