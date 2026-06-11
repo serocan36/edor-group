@@ -1,128 +1,40 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EDOR GROUP İnşaat - Endüstriyel projeler, altyapı ve güçlü mimari.">
+    <meta name="description" content="EDOR GROUP - İnşaat sektöründe güçlü mühendislik ve modern altyapı projeleri.">
     <title>İnşaat | EDOR GROUP</title>
     <link rel="icon" href="assets/images/favicocn.png" type="image/png">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        .page-header {
-            height: 60vh;
-            background: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,1) 100%), url('https://images.unsplash.com/photo-1541888086225-f673f8b03e05?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
-            display: flex;
-            align-items: flex-end;
-            padding-bottom: 4rem;
-        }
-        
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 4rem auto;
-        }
-        
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: var(--accent-gold);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -1px;
-        }
-        
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-        }
-        
-        .timeline-item.left {
-            left: 0;
-        }
-        
-        .timeline-item.right {
-            left: 50%;
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            right: -10px;
-            background-color: var(--bg-dark);
-            border: 4px solid var(--accent-gold);
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        
-        .timeline-item.right::after {
-            left: -10px;
-        }
-        
-        .timeline-content {
-            padding: 2rem;
-            background-color: var(--bg-card);
-            position: relative;
-            border-radius: 4px;
-            border: 1px solid var(--glass-border);
-        }
-        
-        .timeline-content img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-        }
-        
-        .timeline-content h3 {
-            color: var(--accent-gold);
-            margin-bottom: 0.5rem;
-        }
-        
-        @media screen and (max-width: 768px) {
-            .timeline::after {
-                left: 31px;
-            }
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            .timeline-item.left::after, .timeline-item.right::after {
-                left: 21px;
-            }
-            .timeline-item.right {
-                left: 0;
-            }
-        }
-    </style>
 </head>
+
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assets/images/edorlogo.png" alt="Loading..." class="loader-logo">
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
 
     <!-- Header -->
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
-            
+            <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+
             <nav class="nav-links">
                 <a href="index.html">Ana Sayfa</a>
-                <a href="gayrimenkul.html">Gayrimenkul</a>
+                <a href="hirdavat.html">Hırdavat</a>
                 <a href="otomotiv.html">Otomotiv</a>
                 <a href="insaat.html" class="active">İnşaat</a>
                 <a href="iletisim.html">İletişim</a>
@@ -135,55 +47,109 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container" data-aos="fade-up">
-            <span class="hero-subtitle">Mühendislik Harikaları</span>
-            <h1 class="hero-title" style="font-size: 4rem; margin-bottom: 0;">İnşaat Projeleri</h1>
+    <section class="page-header" style="padding: 12rem 0 6rem; background: linear-gradient(rgba(5,5,5,0.7), rgba(5,5,5,0.9)), url('https://images.unsplash.com/photo-1541888087363-2213b28b76ce?q=80&w=2070&auto=format&fit=crop') center/cover; text-align: center;">
+        <div class="container">
+            <h1 data-aos="fade-up" style="font-size: 4rem;">Geleceği İnşa Ediyoruz</h1>
+            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Modern mühendislik yaklaşımı ve yüksek kalite standartlarımızla kalıcı eserler bırakıyoruz.</p>
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- Projeler Section -->
     <section class="section">
         <div class="container">
-            <div class="text-center" data-aos="fade-up">
-                <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Modern mimariyi sağlam mühendislik temelleriyle birleştirerek endüstriyel tesisler, dev altyapı projeleri ve mega yapılar inşa ediyoruz.</p>
+            <div class="text-center" data-aos="fade-up" style="margin-bottom: 4rem;">
+                <span class="section-subtitle">Proje Alanlarımız</span>
+                <h2>İnşaat Sektöründeki Gücümüz</h2>
             </div>
-            
+
+            <div class="services-grid">
+                <!-- Konut Projeleri -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Konut Projeleri" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">Lüks Yaşam</span>
+                        <h3 class="product-title">Konut Projeleri</h3>
+                        <p class="product-desc">Modern mimarinin estetikle buluştuğu lüks rezidanslar ve konforlu villa projeleri üretiyoruz.</p>
+                    </div>
+                </div>
+
+                <!-- Ticari Projeler -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Ticari Projeler" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">İş Dünyası</span>
+                        <h3 class="product-title">Ticari Projeler</h3>
+                        <p class="product-desc">İş dünyasının dinamiklerine uygun A+ ofis binaları ve modern AVM projelerini hayata geçiriyoruz.</p>
+                    </div>
+                </div>
+
+                <!-- Endüstriyel Yapılar -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=2070&auto=format&fit=crop" alt="Endüstriyel Yapılar" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">Üretim Tesisleri</span>
+                        <h3 class="product-title">Endüstriyel Yapılar</h3>
+                        <p class="product-desc">Büyük ölçekli fabrikalar, üretim hatları ve lojistik depo merkezlerinin anahtar teslim inşası.</p>
+                    </div>
+                </div>
+
+                <!-- Altyapı Projeleri -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=2070&auto=format&fit=crop" alt="Altyapı Projeleri" class="product-img">
+                    <div class="product-info">
+                        <span class="product-category">Geleceğin Temelleri</span>
+                        <h3 class="product-title">Altyapı Projeleri</h3>
+                        <p class="product-desc">Şehirlerin yaşam kalitesini artıran, yüksek mühendislik gerektiren köprü, yol ve altyapı işleri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" style="margin-bottom: 4rem;">
+                <span class="section-subtitle">Süreçlerimiz</span>
+                <h2>Proje Geliştirme Süreci</h2>
+            </div>
+
             <div class="timeline">
                 <div class="timeline-item left" data-aos="fade-right">
                     <div class="timeline-content">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2062&auto=format&fit=crop" alt="Altyapı">
-                        <h3>Altyapı Projeleri</h3>
-                        <p>Otoyol, köprü ve kentsel altyapı projelerinde uzman mühendislik kadromuzla kalıcı eserler bırakıyoruz.</p>
+                        <h3 class="text-gold">01. Etüt ve Planlama</h3>
+                        <p>Arazinin yapısı, çevresel faktörler ve proje gereksinimleri detaylı olarak analiz edilir. Mimari ve mühendislik planlamaları çizilir.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item right" data-aos="fade-left">
                     <div class="timeline-content">
-                        <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop" alt="Endüstriyel">
-                        <h3>Endüstriyel Tesisler</h3>
-                        <p>Fabrikalar, lojistik merkezleri ve enerji tesisleri için yüksek standartlarda anahtar teslim inşaat çözümleri.</p>
+                        <h3 class="text-gold">02. Temel ve Altyapı</h3>
+                        <p>Zemin güçlendirme, kazı ve temel atma işlemleri yüksek güvenlik standartlarında, sismik şartlara uygun olarak tamamlanır.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item left" data-aos="fade-right">
                     <div class="timeline-content">
-                        <img src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?q=80&w=2073&auto=format&fit=crop" alt="Ticari">
-                        <h3>Ticari Kompleksler</h3>
-                        <p>AVM, otel ve dev iş merkezleri projelerinde mimari estetiği işlevsellikle bir araya getiriyoruz.</p>
+                        <h3 class="text-gold">03. Kaba ve İnce Yapı</h3>
+                        <p>Betonarme yapıların yükselmesinin ardından, birinci sınıf malzemelerle ince işçilik ve elektromekanik tesisat aşamasına geçilir.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="text-gold">04. Teslimat ve İşletme</h3>
+                        <p>Tüm kalite kontrol ve güvenlik testlerinden geçen proje, eksiksiz bir şekilde yatırımcıya ve işletmeye teslim edilir.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-            <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
-                    <p>Gayrimenkul, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal yapı.</p>
+                    <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+                    <p>Hırdavat, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal yapı.</p>
                     <div class="footer-socials">
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -191,18 +157,18 @@
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3 class="footer-title">Hızlı Menü</h3>
                     <ul>
                         <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="gayrimenkul.html">Gayrimenkul</a></li>
+                        <li><a href="hirdavat.html">Hırdavat</a></li>
                         <li><a href="otomotiv.html">Otomotiv</a></li>
                         <li><a href="insaat.html">İnşaat</a></li>
                         <li><a href="iletisim.html">İletişim</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3 class="footer-title">Kurumsal</h3>
                     <ul>
@@ -213,13 +179,13 @@
                         <li><a href="insan-kaynaklari.html">İnsan Kaynakları</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-contact">
                     <h3 class="footer-title">İletişim</h3>
                     <ul>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            <span>Levent Mah. Büyükdere Cad. No: 123<br>Şişli / İstanbul</span>
+                            <span>Kadıköy Belediyesi Özden Mah.<br>Ahmet Yesevi 10 Sk. No:1<br>Merkez / Yalova</span>
                         </li>
                         <li>
                             <i class="fa-solid fa-phone"></i>
@@ -232,7 +198,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 EDOR GROUP. Tüm hakları saklıdır. Design & Code by <a href="https://serhatmazak.com/" target="_blank" class="footer-credit">Serhat MAZAK</a></p>
             </div>
@@ -243,4 +209,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

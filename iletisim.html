@@ -129,20 +129,55 @@
         @media (max-width: 991px) {
             .contact-wrap {
                 grid-template-columns: 1fr;
+                margin-top: -2rem;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info, .contact-form {
+                padding: 1.5rem;
+            }
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.5rem;
+                flex-shrink: 0;
+            }
+            .contact-item {
+                gap: 1rem;
+            }
+            .page-header {
+                height: 40vh;
+            }
+            .contact-item h3 {
+                font-size: 1.1rem;
+            }
+            .contact-item p {
+                font-size: 0.95rem;
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assets/images/edorlogo.png" alt="Loading..." class="loader-logo">
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+
     <!-- Header -->
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+            <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
             
             <nav class="nav-links">
                 <a href="index.html">Ana Sayfa</a>
-                <a href="gayrimenkul.html">Gayrimenkul</a>
+                <a href="hirdavat.html">Hırdavat</a>
                 <a href="otomotiv.html">Otomotiv</a>
                 <a href="insaat.html">İnşaat</a>
                 <a href="iletisim.html" class="active">İletişim</a>
@@ -211,7 +246,7 @@
                         <div class="form-group">
                             <select class="form-control" required style="appearance: none;">
                                 <option value="" disabled selected>İlgilendiğiniz Sektör</option>
-                                <option value="gayrimenkul">Gayrimenkul</option>
+                                <option value="hirdavat">Hırdavat</option>
                                 <option value="otomotiv">Otomotiv</option>
                                 <option value="insaat">İnşaat</option>
                                 <option value="diger">Diğer / Kurumsal</option>
@@ -237,8 +272,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
-                    <p>Gayrimenkul, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal yapı.</p>
+                    <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+                    <p>Hırdavat, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal yapı.</p>
                     <div class="footer-socials">
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -251,7 +286,7 @@
                     <h3 class="footer-title">Hızlı Menü</h3>
                     <ul>
                         <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="gayrimenkul.html">Gayrimenkul</a></li>
+                        <li><a href="hirdavat.html">Hırdavat</a></li>
                         <li><a href="otomotiv.html">Otomotiv</a></li>
                         <li><a href="insaat.html">İnşaat</a></li>
                         <li><a href="iletisim.html">İletişim</a></li>

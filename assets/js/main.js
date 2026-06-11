@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!document.querySelector('.mobile-menu-header')) {
       const headerDiv = document.createElement('div');
       headerDiv.classList.add('mobile-menu-header');
-      headerDiv.innerHTML = '<a href="index.html" class="logo"><img src="assets/images/logo.png" alt="EDOR GROUP Logo" class="site-logo"></a>';
+      headerDiv.innerHTML = '<a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>';
       navLinks.insertBefore(headerDiv, navLinks.firstChild);
       
       const footerDiv = document.createElement('div');
@@ -119,4 +119,44 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+
+  // Preloader Logic
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.classList.add('loaded');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 800);
+    }
+  });
+
+  // Scroll Progress Logic
+  const scrollProgress = document.getElementById('scroll-progress');
+  if (scrollProgress) {
+    window.addEventListener('scroll', () => {
+      const scrollPx = document.documentElement.scrollTop;
+      const winHeightPx = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = `${scrollPx / winHeightPx * 100}%`;
+      scrollProgress.style.width = scrolled;
+    });
+  }
+
+  // Cinematic Video Slider Logic
+  const heroVideos = document.querySelectorAll('.hero-video-bg');
+  if (heroVideos.length > 0) {
+    let currentVideoIndex = 0;
+    setInterval(() => {
+      heroVideos[currentVideoIndex].classList.remove('active');
+      currentVideoIndex = (currentVideoIndex + 1) % heroVideos.length;
+      heroVideos[currentVideoIndex].classList.add('active');
+      
+      const videoEl = heroVideos[currentVideoIndex];
+      if (videoEl.paused) {
+          videoEl.play().catch(e => console.log('Autoplay prevented:', e));
+      }
+    }, 6000); // 6 seconds per video for a 18s total loop
+  }
+
 });
