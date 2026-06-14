@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EDOR GROUP - Otomotiv sektöründe ticari araçlar ve premium filo yönetimi hizmetleri.">
-    <title>Otomotiv | EDOR GROUP</title>
-    <link rel="icon" href="assets/images/favicocn.png" type="image/png">
+    <meta name="description"
+        content="EDOR GROUP - Premium otomotiv çözümleri, lüks segment araç tedariki ve kurumsal filo yönetimi. Lüks showroom deneyimini keşfedin.">
+    <title>Otomotiv Showroom | EDOR GROUP</title>
+    <link rel="icon" href="assets/images/edorlogo.png" type="image/png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,7 +31,8 @@
     <!-- Header -->
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
+            <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo"
+                    class="site-logo"></a>
 
             <nav class="nav-links">
                 <a href="index.html">Ana Sayfa</a>
@@ -40,108 +42,155 @@
                 <a href="iletisim.html">İletişim</a>
             </nav>
 
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="Menü">
                 <div class="hamburger"></div>
             </button>
         </div>
     </header>
 
     <!-- Page Header -->
-    <section class="page-header" style="padding: 12rem 0 6rem; background: linear-gradient(rgba(5,5,5,0.7), rgba(5,5,5,0.9)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2066&auto=format&fit=crop') center/cover; text-align: center;">
+    <section class="page-header"
+        style="padding: 12rem 0 6rem; background: linear-gradient(rgba(5,5,5,0.7), rgba(5,5,5,0.9)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2066&auto=format&fit=crop') center/cover; text-align: center;">
         <div class="container">
-            <h1 data-aos="fade-up" style="font-size: 4rem;">Premium Otomotiv Çözümleri</h1>
-            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Lüks segment araç tedarikinden kurumsal filo yönetimine, yolda da prestijinizi koruyoruz.</p>
+            <h1 data-aos="fade-up" style="font-size: 4rem;">Sürüş Ayrıcalığı</h1>
+            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+                Lüks, konfor ve performansı bir araya getiren seçkin araç modelleriyle sürüş deneyiminizi üst seviyeye
+                taşıyoruz.</p>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Premium Showroom Section -->
     <section class="section">
         <div class="container">
-            <div class="text-center" data-aos="fade-up" style="margin-bottom: 4rem;">
-                <span class="section-subtitle">Otomotiv Hizmetlerimiz</span>
-                <h2>Sürüş Ayrıcalığı</h2>
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+
+                <!-- Mercedes-Benz -->
+                <article class="premium-car-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="car-img-wrapper">
+                        <div class="car-brand-logo"></div>
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop"
+                            alt="Mercedes-Benz" loading="lazy">
+                        <div class="car-img-overlay">
+                            <button class="btn-gallery" data-gallery="mercedes" aria-label="Galeriyi Aç">
+                                <i class="fa-regular fa-images"></i> Detayları İncele
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <span class="product-category">Premium Luxury</span>
+                        <h3 class="product-title">Mercedes-Benz</h3>
+                        <p class="product-desc">Üst düzey konfor, ileri teknoloji ve prestijli tasarım anlayışıyla
+                            Mercedes-Benz modelleri sürüş deneyimini yeniden tanımlar.</p>
+
+                        <ul class="car-features-list">
+                            <li>Premium İç Mekan</li>
+                            <li>Akıllı Sürüş Sistemleri</li>
+                            <li>Üst Düzey Güvenlik</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- BMW -->
+                <article class="premium-car-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="car-img-wrapper">
+                        <div class="car-brand-logo"></div>
+                        <img src="assets/images/otomotiv/bmwkapak.jpg" alt="BMW" loading="lazy">
+                        <div class="car-img-overlay">
+                            <button class="btn-gallery" data-gallery="bmw" aria-label="Galeriyi Aç">
+                                <i class="fa-regular fa-images"></i> Detayları İncele
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <span class="product-category">Ultimate Driving Machine</span>
+                        <h3 class="product-title">BMW</h3>
+                        <p class="product-desc">Sportif karakteri, yüksek performansı ve sürüş keyfiyle BMW modelleri
+                            dinamik bir deneyim sunar.</p>
+
+                        <ul class="car-features-list">
+                            <li>Sportif Tasarım</li>
+                            <li>Yüksek Performans</li>
+                            <li>Sürüş Dinamikleri</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Audi -->
+                <article class="premium-car-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="car-img-wrapper">
+                        <div class="car-brand-logo"></div>
+                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2069&auto=format&fit=crop"
+                            alt="Audi" loading="lazy">
+                        <div class="car-img-overlay">
+                            <button class="btn-gallery" data-gallery="audi" aria-label="Galeriyi Aç">
+                                <i class="fa-regular fa-images"></i> Detayları İncele
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <span class="product-category">Progress Through Technology</span>
+                        <h3 class="product-title">Audi</h3>
+                        <p class="product-desc">Modern tasarım dili ve gelişmiş teknolojileriyle Audi, premium otomobil
+                            dünyasında fark yaratır.</p>
+
+                        <ul class="car-features-list">
+                            <li>Quattro Teknolojisi</li>
+                            <li>Dijital Kokpit</li>
+                            <li>Yenilikçi Tasarım</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Volkswagen -->
+                <article class="premium-car-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="car-img-wrapper">
+                        <div class="car-brand-logo"></div>
+                        <img src="assets/images/otomotiv/wolksvagenkapak.jpg" alt="Volkswagen" loading="lazy">
+                        <div class="car-img-overlay">
+                            <button class="btn-gallery" data-gallery="vw" aria-label="Galeriyi Aç">
+                                <i class="fa-regular fa-images"></i> Detayları İncele
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <span class="product-category">German Engineering</span>
+                        <h3 class="product-title">Volkswagen</h3>
+                        <p class="product-desc">Güvenilirlik, konfor ve teknolojiyi bir araya getiren Volkswagen
+                            modelleri her ihtiyaca uygun çözümler sunar.</p>
+
+                        <ul class="car-features-list">
+                            <li>Ekonomik Kullanım</li>
+                            <li>Geniş İç Hacim</li>
+                            <li>Alman Mühendisliği</li>
+                        </ul>
+                    </div>
+                </article>
+
             </div>
+        </div>
+    </section>
 
-            <div class="services-grid">
-                <!-- Araç Tedarik -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1503376760367-11ea892719ce?q=80&w=2070&auto=format&fit=crop" alt="Araç Tedarik Hizmetleri" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">Premium Segment</span>
-                        <h3 class="product-title">Araç Tedarik Hizmetleri</h3>
-                        <p class="product-desc">Yönetici kadroları ve özel talepler için yüksek donanımlı, lüks ve konforlu araç tedariki sağlıyoruz.</p>
-                        <div class="tech-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Sınıf</span>
-                                <span class="spec-val">Premium & Lüks</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Hizmet</span>
-                                <span class="spec-val">VIP Teslimat</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Marquee Brands Section -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" style="margin-bottom: 3rem;">
+                <span class="section-subtitle">Çözüm Ortaklarımız</span>
+                <h2>Öne Çıkan Markalarımız</h2>
+            </div>
+        </div>
 
-                <!-- Ticari Araç Çözümleri -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=2028&auto=format&fit=crop" alt="Ticari Araç Çözümleri" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">Lojistik ve Operasyon</span>
-                        <h3 class="product-title">Ticari Araç Çözümleri</h3>
-                        <p class="product-desc">İşletmenizin taşıma ve lojistik ihtiyaçlarına yönelik güvenilir, yüksek kapasiteli ticari araç kiralama ve satışı.</p>
-                        <div class="tech-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Kapasite</span>
-                                <span class="spec-val">Yüksek Tonaj</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Segment</span>
-                                <span class="spec-val">Ağır Vasıta / Panelvan</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Filo Yönetimi -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop" alt="Filo Yönetimi" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">Kurumsal Yönetim</span>
-                        <h3 class="product-title">Filo Yönetimi</h3>
-                        <p class="product-desc">Şirketinizin araç parkını operasyonel ve finansal açıdan en verimli şekilde yönetecek teknolojik sistemler.</p>
-                        <div class="tech-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Yazılım</span>
-                                <span class="spec-val">Akıllı Takip</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Destek</span>
-                                <span class="spec-val">7/24 Operasyon</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kurumsal Araç Danışmanlığı -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=80&w=2070&auto=format&fit=crop" alt="Kurumsal Araç Danışmanlığı" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">Stratejik Planlama</span>
-                        <h3 class="product-title">Kurumsal Araç Danışmanlığı</h3>
-                        <p class="product-desc">Şirket vergi planlamanıza ve operasyonel maliyetlerinize uygun en doğru araç seçim stratejileri.</p>
-                        <div class="tech-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Analiz</span>
-                                <span class="spec-val">Maliyet Optimizasyonu</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Odak</span>
-                                <span class="spec-val">Verimlilik</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="marquee-container" data-aos="fade-in" data-aos-delay="200">
+            <!-- Double content for infinite seamless scroll -->
+            <div class="marquee-content">
+                <span class="marquee-item">Mercedes-Benz</span>
+                <span class="marquee-item">BMW</span>
+                <span class="marquee-item">Audi</span>
+                <span class="marquee-item">Volkswagen</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="marquee-item">Mercedes-Benz</span>
+                <span class="marquee-item">BMW</span>
+                <span class="marquee-item">Audi</span>
+                <span class="marquee-item">Volkswagen</span>
             </div>
         </div>
     </section>
@@ -151,8 +200,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo" class="site-logo"></a>
-                    <p>Hırdavat, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal yapı.</p>
+                    <a href="index.html" class="logo"><img src="assets/images/edorlogo.png" alt="EDOR GROUP Logo"
+                            class="site-logo"></a>
+                    <p>Hırdavat, otomotiv ve inşaat sektörlerinde öncü, güvenilir ve yenilikçi çözümler sunan kurumsal
+                        yapı.</p>
                     <div class="footer-socials">
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -203,10 +254,22 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 EDOR GROUP. Tüm hakları saklıdır. Design & Code by <a href="https://serhatmazak.com/" target="_blank" class="footer-credit">Serhat MAZAK</a></p>
+                <p>&copy; 2026 EDOR GROUP. Tüm hakları saklıdır. Design & Code by <a href="https://serhatmazak.com/"
+                        target="_blank" class="footer-credit">Serhat MAZAK</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="projectLightbox" role="dialog" aria-modal="true">
+        <i class="fa-solid fa-xmark lightbox-close" id="lightboxClose"></i>
+        <div class="lightbox-content">
+            <i class="fa-solid fa-chevron-left lightbox-nav lightbox-prev" id="lightboxPrev"></i>
+            <img src="" alt="Proje Görseli" class="lightbox-img" id="lightboxImg">
+            <i class="fa-solid fa-chevron-right lightbox-nav lightbox-next" id="lightboxNext"></i>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

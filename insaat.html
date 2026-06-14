@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EDOR GROUP - İnşaat sektöründe güçlü mühendislik ve modern altyapı projeleri.">
-    <title>İnşaat | EDOR GROUP</title>
-    <link rel="icon" href="assets/images/favicocn.png" type="image/png">
+    <meta name="description" content="EDOR GROUP - İnşaat sektöründe güçlü mühendislik ve modern altyapı projeleri. Lüks gayrimenkul vitrinimizi inceleyin.">
+    <title>İnşaat Projeleri | EDOR GROUP</title>
+    <link rel="icon" href="assets/images/edorlogo.png" type="image/png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -40,7 +40,7 @@
                 <a href="iletisim.html">İletişim</a>
             </nav>
 
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="Menü">
                 <div class="hamburger"></div>
             </button>
         </div>
@@ -54,54 +54,100 @@
         </div>
     </section>
 
-    <!-- Projeler Section -->
+    <!-- Premium Projeler Vitrini Section -->
     <section class="section">
         <div class="container">
             <div class="text-center" data-aos="fade-up" style="margin-bottom: 4rem;">
-                <span class="section-subtitle">Proje Alanlarımız</span>
+                <span class="section-subtitle">Referans Projelerimiz</span>
                 <h2>İnşaat Sektöründeki Gücümüz</h2>
             </div>
 
-            <div class="services-grid">
-                <!-- Konut Projeleri -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Konut Projeleri" class="product-img">
-                    <div class="product-info">
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+                
+                <!-- Sol Kart: Tamamlanan Projeler -->
+                <article class="premium-project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/samanli/yalovavillakapak.jpeg" alt="Yalova Samanlı Villa Projesi" loading="lazy">
+                        <div class="project-img-overlay">
+                            <button class="btn-gallery" data-gallery="samanli" aria-label="Galeriyi Aç">
+                                <i class="fa-regular fa-images"></i> Daha Fazla Fotoğraf Gör
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-details">
                         <span class="product-category">Lüks Yaşam</span>
-                        <h3 class="product-title">Konut Projeleri</h3>
-                        <p class="product-desc">Modern mimarinin estetikle buluştuğu lüks rezidanslar ve konforlu villa projeleri üretiyoruz.</p>
-                    </div>
-                </div>
+                        <h3 class="product-title">Yalova Samanlı Villa Projesi</h3>
+                        <p class="product-desc">Yalova'nın Samanlı bölgesinde hayata geçirilen modern villa projesi. Estetik mimarisi, kaliteli malzeme kullanımı ve yüksek yaşam standartlarıyla tamamlanarak teslim edilmiştir.</p>
+                        
+                        <div class="project-meta-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">Lokasyon</span>
+                                <span class="meta-val">Yalova / Samanlı</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Durum</span>
+                                <span class="meta-val text-gold">Tamamlandı</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Proje Tipi</span>
+                                <span class="meta-val">Villa</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Teslim Durumu</span>
+                                <span class="meta-val">Anahtar Teslim</span>
+                            </div>
+                        </div>
 
-                <!-- Ticari Projeler -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Ticari Projeler" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">İş Dünyası</span>
-                        <h3 class="product-title">Ticari Projeler</h3>
-                        <p class="product-desc">İş dünyasının dinamiklerine uygun A+ ofis binaları ve modern AVM projelerini hayata geçiriyoruz.</p>
+                        <ul class="project-status-list">
+                            <li>Teslim Edildi</li>
+                            <li>Kalite Kontrol Tamamlandı</li>
+                            <li>Kullanıma Hazır</li>
+                        </ul>
                     </div>
-                </div>
+                </article>
 
-                <!-- Endüstriyel Yapılar -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=2070&auto=format&fit=crop" alt="Endüstriyel Yapılar" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">Üretim Tesisleri</span>
-                        <h3 class="product-title">Endüstriyel Yapılar</h3>
-                        <p class="product-desc">Büyük ölçekli fabrikalar, üretim hatları ve lojistik depo merkezlerinin anahtar teslim inşası.</p>
+                <!-- Sağ Kart: Devam Eden Projeler -->
+                <article class="premium-project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/ciftlikkoy/ciftlikkoy.jpeg" alt="Çiftlikköy Mehmet Akif Ersoy Mahallesi Projesi" loading="lazy">
+                        <div class="project-img-overlay">
+                            <button class="btn-gallery" data-gallery="ciftlikkoy" aria-label="Galeriyi Aç">
+                                <i class="fa-regular fa-images"></i> Daha Fazla Fotoğraf Gör
+                            </button>
+                        </div>
                     </div>
-                </div>
+                    <div class="project-details">
+                        <span class="product-category">EDOR GROUP</span>
+                        <h3 class="product-title">Çiftlikköy Mehmet Akif Ersoy Mah.</h3>
+                        <p class="product-desc">Yalova Çiftlikköy Mehmet Akif Ersoy Mahallesi'nde yapımı devam eden modern yaşam projesi. Bölgenin gelişen yapısına uygun olarak yüksek kalite standartlarında inşa edilmektedir.</p>
+                        
+                        <div class="project-meta-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">Lokasyon</span>
+                                <span class="meta-val">Yalova / Çiftlikköy</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Mahalle</span>
+                                <span class="meta-val">Mehmet Akif Ersoy</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Durum</span>
+                                <span class="meta-val text-gold">Devam Ediyor</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Proje Tipi</span>
+                                <span class="meta-val">Konut Projesi</span>
+                            </div>
+                        </div>
 
-                <!-- Altyapı Projeleri -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
-                    <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=2070&auto=format&fit=crop" alt="Altyapı Projeleri" class="product-img">
-                    <div class="product-info">
-                        <span class="product-category">Geleceğin Temelleri</span>
-                        <h3 class="product-title">Altyapı Projeleri</h3>
-                        <p class="product-desc">Şehirlerin yaşam kalitesini artıran, yüksek mühendislik gerektiren köprü, yol ve altyapı işleri.</p>
+                        <ul class="project-status-list">
+                            <li>İnşaat Devam Ediyor</li>
+                            <li>Güncel İlerleme Durumu: %65</li>
+                            <li>Planlanan Teslim: 2027 1. Çeyrek</li>
+                        </ul>
                     </div>
-                </div>
+                </article>
+
             </div>
         </div>
     </section>
@@ -204,6 +250,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="projectLightbox" role="dialog" aria-modal="true">
+        <i class="fa-solid fa-xmark lightbox-close" id="lightboxClose"></i>
+        <div class="lightbox-content">
+            <i class="fa-solid fa-chevron-left lightbox-nav lightbox-prev" id="lightboxPrev"></i>
+            <img src="" alt="Proje Görseli" class="lightbox-img" id="lightboxImg">
+            <i class="fa-solid fa-chevron-right lightbox-nav lightbox-next" id="lightboxNext"></i>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
