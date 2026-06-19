@@ -179,7 +179,46 @@ document.addEventListener('DOMContentLoaded', () => {
       "assets/images/ciftlikkoy/ciftlikkoy10.jpeg",
       "assets/images/ciftlikkoy/ciftlikkoy11.jpeg"
     ],
-
+arapcesme: [
+      "assets/images/arapcesme/arapcesme2.jpeg",
+      "assets/images/arapcesme/arapcesme3.jpeg",
+      "assets/images/arapcesme/arapcesme4.jpeg",
+      "assets/images/arapcesme/arapcesme5.jpeg",
+   ],
+   mevlana: [
+      "assets/images/mevlana/mevlana2.jpeg",
+      "assets/images/mevlana/mevlana3.jpeg",
+      "assets/images/mevlana/mevlana4.jpeg",
+   ],
+   mustafapasa: [
+      "assets/images/mustafapasa/mustafapasa2.jpeg",
+      "assets/images/mustafapasa/mustafapasa3.jpeg",
+      "assets/images/mustafapasa/mustafapasa4.jpeg",
+   ],
+   inonu: [
+      "assets/images/inonu/inonu2.jpeg",
+      "assets/images/inonu/inonu3.jpeg",
+      "assets/images/inonu/inonu4.jpeg",
+      "assets/images/inonu/inonu5.jpeg",
+   ],
+    cayirova: [
+      "assets/images/cayirova/cayirova2.jpeg",
+      "assets/images/cayirova/cayirova3.jpeg",
+      "assets/images/cayirova/cayirova4.jpeg",
+      "assets/images/cayirova/cayirova5.jpeg",
+      "assets/images/cayirova/cayirova6.jpeg",
+      "assets/images/cayirova/cayirova7.jpeg",
+      "assets/images/cayirova/cayirova8.jpeg",
+      "assets/images/cayirova/cayirova9.jpeg",
+      "assets/images/cayirova/cayirova10.jpeg",
+   ],
+   mustafapasadigeri: [
+      "assets/images/mustafapasadigeri/mustafapasadigeri.jpeg",
+      "assets/images/mustafapasadigeri/mustafapasadigeri3.jpeg",
+      "assets/images/mustafapasadigeri/mustafapasadigeri4.jpeg",
+      "assets/images/mustafapasadigeri/mustafapasadigeri5.jpeg",
+      "assets/images/mustafapasadigeri/mustafapasakapak2.jpeg",
+   ],
     mercedes: [
       "assets/images/otomotiv/mercedes2.jpg",
       "assets/images/otomotiv/mercedes3.jpg",
